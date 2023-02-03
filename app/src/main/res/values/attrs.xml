@@ -6,7 +6,7 @@
         <attr name="dotSelectedSize" format="dimension"/>
         <attr name="pathWidth" format="dimension"/>
         <attr name="aspectRatioEnabled" format="boolean"/>
-        <attr name="aspectRatio" format="enum">
+        <attr name="aspectRatioType" format="enum">
             <enum name="square" value="0"/>
             <enum name="width_bias" value="1"/>
             <enum name="height_bias" value="2"/>

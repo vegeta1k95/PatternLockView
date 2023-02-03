@@ -14,9 +14,6 @@ import android.os.Debug;
 import android.os.Parcel;
 import android.os.Parcelable;
 import android.os.SystemClock;
-import android.support.annotation.ColorInt;
-import android.support.annotation.Dimension;
-import android.support.annotation.IntDef;
 import android.util.AttributeSet;
 import android.view.HapticFeedbackConstants;
 import android.view.MotionEvent;
@@ -41,6 +38,10 @@ import static com.andrognito.patternlockview.PatternLockView.AspectRatio.ASPECT_
 import static com.andrognito.patternlockview.PatternLockView.PatternViewMode.AUTO_DRAW;
 import static com.andrognito.patternlockview.PatternLockView.PatternViewMode.CORRECT;
 import static com.andrognito.patternlockview.PatternLockView.PatternViewMode.WRONG;
+
+import androidx.annotation.ColorInt;
+import androidx.annotation.Dimension;
+import androidx.annotation.IntDef;
 
 /**
  * Displays a powerful, customizable and Material Design complaint pattern lock in the screen which
@@ -172,7 +173,7 @@ public class PatternLockView extends View {
                     DEFAULT_PATTERN_DOT_COUNT);
             mAspectRatioEnabled = typedArray.getBoolean(R.styleable.PatternLockView_aspectRatioEnabled,
                     false);
-            mAspectRatio = typedArray.getInt(R.styleable.PatternLockView_aspectRatio,
+            mAspectRatio = typedArray.getInt(R.styleable.PatternLockView_aspectRatioType,
                     ASPECT_RATIO_SQUARE);
             mPathWidth = (int) typedArray.getDimension(R.styleable.PatternLockView_pathWidth,
                     ResourceUtils.getDimensionInPx(getContext(), R.dimen.pattern_lock_path_width));
